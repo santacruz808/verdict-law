@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#191d1e">
+  <meta name="description" content="Вердикт — концепция адвокатского бюро. Защита интересов частных лиц и бизнеса, внимательный подход и понятная стратегия.">
+  <title>Вердикт — На вашей стороне</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;450;500;550;600;650;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<section class="hero" id="home" aria-label="Адвокатское бюро Вердикт">
+  <div class="scene" aria-hidden="true"><img class="architecture" src="assets/courthouse.png" alt="" fetchpriority="high"><div class="scene-light"></div></div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <canvas id="fog" aria-hidden="true"></canvas>
+  <header class="header wrap">
+    <a class="brand" href="#home" aria-label="Вердикт — главная">
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 5v34M9 14h30M24 5l-4 6m4-6 4 6M9 14 3 28h12L9 14Zm30 0-6 14h12l-6-14ZM3 28c0 5 12 5 12 0m18 0c0 5 12 5 12 0M15 41h18M19 37h10" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      <span>ВЕРДИКТ<small>АДВОКАТСКОЕ БЮРО</small></span>
+    </a>
+    <nav class="nav" aria-label="Главная навигация"><a href="#practice">Практики</a><a href="#approach">О бюро</a><a href="#process">Как мы работаем</a><a href="#questions">Вопросы</a></nav>
+    <button class="header-cta" data-consult>Обсудить дело <span aria-hidden="true">↗</span></button>
+    <button class="menu-button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация" hidden><a href="#practice">Практики</a><a href="#approach">О бюро</a><a href="#process">Как мы работаем</a><a href="#questions">Вопросы</a><button data-consult>Обсудить дело ↗</button></nav>
+  <div class="hero-content wrap">
+    <div class="eyebrow"><span class="little-line"></span> ПРАВО. ПРИНЦИПЫ. ЛЮДИ.</div>
+    <h1>На вашей<br>стороне.<br><em>В любой ситуации.</em></h1>
+    <p class="hero-description">Когда на кону важное, нужна опора.<br>Защищаем ваши интересы — спокойно,<br>последовательно, до конца.</p>
+    <button class="primary-button" data-consult>Обсудить вашу ситуацию <span class="arrow" aria-hidden="true">↗</span></button>
+    <div class="confidential"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3.5" y="7" width="9" height="7" rx="1.5" stroke="currentColor"/><path d="M5.5 7V4a2.5 2.5 0 0 1 5 0v3M8 10v1" stroke="currentColor"/></svg>Каждая история остаётся между нами</div>
+  </div>
+  <div class="hero-bottom wrap">
+    <a class="scroll-link" href="#practice"><span class="scroll-circle" aria-hidden="true">↓</span><span>Право на уверенность</span></a>
+    <div class="time-switch" role="group" aria-label="Освещение первого экрана"><button id="day" aria-pressed="false"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="3.2" stroke="currentColor"/><path d="M10 1v2m0 14v2M1 10h2m14 0h2M3.5 3.5 5 5m10 10 1.5 1.5m-13 0L5 15M15 5l1.5-1.5" stroke="currentColor"/></svg>День</button><button id="night" aria-pressed="true"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16.8 12A7 7 0 0 1 8 3.2 7 7 0 1 0 16.8 12Z" stroke="currentColor" stroke-linejoin="round"/></svg>Ночь</button></div>
+    <span class="hero-note">ВНИМАНИЕ К ДЕТАЛЯМ.<br>УВАЖЕНИЕ К ВАШЕЙ ИСТОРИИ.</span>
+  </div>
+</section>
+<main id="main">
+  <section class="practice section wrap" id="practice">
+    <div class="section-top"><span class="section-label">01 / НАША ЭКСПЕРТИЗА</span><span class="section-aside">Личное и деловое.<br>С одинаковым вниманием.</span></div>
+    <div class="section-heading"><h2>У каждого дела —<br><em>своя стратегия.</em></h2><p>Сначала разбираемся в вашей ситуации.<br>Затем находим правовой путь, который<br>учитывает ваши цели и обстоятельства.</p></div>
+    <div class="practice-list">
+      <button class="practice-row" data-consult data-category="Судебные споры"><span class="practice-num">01</span><span class="practice-title">Судебные споры</span><span class="practice-detail">Представительство в суде,<br>переговоры и урегулирование</span><span class="row-arrow" aria-hidden="true">↗</span></button>
+      <button class="practice-row" data-consult data-category="Защита бизнеса"><span class="practice-num">02</span><span class="practice-title">Защита бизнеса</span><span class="practice-detail">Договоры, корпоративные вопросы,<br>сопровождение сделок</span><span class="row-arrow" aria-hidden="true">↗</span></button>
+      <button class="practice-row" data-consult data-category="Семейные дела"><span class="practice-num">03</span><span class="practice-title">Семейные дела</span><span class="practice-detail">Имущество, семейные соглашения,<br>защита интересов детей</span><span class="row-arrow" aria-hidden="true">↗</span></button>
+      <button class="practice-row" data-consult data-category="Уголовная защита"><span class="practice-num">04</span><span class="practice-title">Уголовная защита</span><span class="practice-detail">Защита на стадии расследования<br>и в судебном разбирательстве</span><span class="row-arrow" aria-hidden="true">↗</span></button>
+      <button class="practice-row" data-consult data-category="Недвижимость и наследство"><span class="practice-num">05</span><span class="practice-title">Недвижимость и наследство</span><span class="practice-detail">Проверка сделок, имущественные<br>и наследственные вопросы</span><span class="row-arrow" aria-hidden="true">↗</span></button>
+    </div>
+  </section>
+  <section class="approach" id="approach"><div class="wrap approach-grid"><div class="approach-art" aria-hidden="true"><span class="art-top">VERDICT / ПРИНЦИПЫ</span><div class="pillar pillar-one"></div><div class="pillar pillar-two"></div><div class="pillar pillar-three"></div><span class="art-bottom">СИЛА В АРГУМЕНТАХ.</span></div><div class="approach-copy"><span class="section-label">02 / НАШ ПОДХОД</span><h2>За делом<br>всегда стоит <em>человек.</em></h2><p>Юридические вопросы редко бывают только юридическими. Это ваш дом, ваше дело, ваша семья и ваше будущее.</p><p>Поэтому мы начинаем с разговора. Объясняем сложное понятным языком, открыто обсуждаем риски и согласовываем каждый важный шаг.</p><div class="principles"><span>Конфиденциальность</span><span>Честная оценка</span><span>Личное участие</span></div></div></div></section>
+  <section class="process section wrap" id="process"><div class="section-top"><span class="section-label">03 / ОТ РАЗГОВОРА К РЕШЕНИЮ</span></div><div class="section-heading"><h2>Ясность.<br><em>На каждом этапе.</em></h2><p>Вы понимаете, что происходит,<br>почему это важно и каким будет<br>следующий шаг.</p></div><div class="steps"><article><span>01 — ЗНАКОМСТВО</span><h3>Слушаем вас</h3><p>Обсуждаем обстоятельства, ваши ожидания и вопросы, которые требуют внимания.</p></article><article><span>02 — АНАЛИЗ</span><h3>Находим опору</h3><p>Изучаем документы, оцениваем возможные сценарии и формируем правовую позицию.</p></article><article><span>03 — СТРАТЕГИЯ</span><h3>Согласуем путь</h3><p>Определяем объём работы, условия сотрудничества и последовательность действий.</p></article><article><span>04 — РАБОТА</span><h3>Держим в курсе</h3><p>Представляем ваши интересы и сообщаем о ходе дела и важных изменениях.</p></article></div></section>
+  <section class="questions wrap" id="questions"><div><span class="section-label">04 / ПЕРЕД ПЕРВЫМ РАЗГОВОРОМ</span><h2>Важные<br><em>вопросы.</em></h2></div><div class="faq-list"><details><summary>Что подготовить к консультации?<span aria-hidden="true">+</span></summary><p>Кратко опишите ситуацию, ключевые даты и желаемый результат. Подготовьте относящиеся к вопросу документы. Если чего-то нет, это можно обсудить при знакомстве.</p></details><details><summary>Можно ли начать с онлайн-встречи?<span aria-hidden="true">+</span></summary><p>В концепции бюро предусмотрены очные и дистанционные встречи. Формат и удобное время согласовываются до консультации.</p></details><details><summary>Как определяется стоимость работы?<span aria-hidden="true">+</span></summary><p>Стоимость зависит от сложности вопроса и объёма задач. Условия и порядок оплаты обсуждаются после знакомства с ситуацией и фиксируются в соглашении.</p></details><details><summary>Вы гарантируете результат?<span aria-hidden="true">+</span></summary><p>Исход дела зависит от обстоятельств, доказательств и решений уполномоченных органов. Корректный подход — объяснить перспективы и риски, а затем согласовать стратегию.</p></details></div></section>
+  <section class="contact" id="contact"><div class="wrap contact-inner"><span class="section-label">ПЕРВЫЙ ШАГ — ПРОСТО РАЗГОВОР</span><h2>Давайте найдём<br><em>вашу точку опоры.</em></h2><button class="primary-button" data-consult>Обсудить вашу ситуацию <span class="arrow" aria-hidden="true">↗</span></button><p>Начните с того, что вас беспокоит.<br>Остальное разберём вместе.</p></div></section>
+</main>
+<footer class="footer wrap"><a class="brand footer-brand" href="#home"><span>ВЕРДИКТ<small>АДВОКАТСКОЕ БЮРО</small></span></a><p>© <span id="year">2026</span> Вердикт. Концепция сайта для портфолио.<br>Вымышленное бюро. Заявки не отправляются.</p><button class="text-button" id="privacy-button">О конфиденциальности ↗</button><a class="back-top" href="#home" aria-label="Вернуться наверх">↑</a></footer>
+<dialog id="consult-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Закрыть">×</button><div id="form-panel"><span class="section-label">НАЧНЁМ СО ЗНАКОМСТВА</span><h2 id="dialog-title">Ваша история<br><em>имеет значение.</em></h2><p class="dialog-intro">Это демонстрационная форма. Подготовьте обращение и сохраните его себе — данные не отправляются.</p><form id="consult-form"><div class="form-grid"><label>Как к вам обращаться<input name="name" autocomplete="name" placeholder="Ваше имя" maxlength="100" required></label><label>Телефон<input name="phone" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" pattern="[+0-9 ()\-]{7,25}" title="Введите телефон: от 7 до 25 символов, цифры, +, пробелы, скобки или дефисы" required></label></div><label>Ваш вопрос<select name="category"><option>Судебные споры</option><option>Защита бизнеса</option><option>Семейные дела</option><option>Уголовная защита</option><option>Недвижимость и наследство</option><option>Другой вопрос</option></select></label><label>Несколько слов о ситуации<textarea name="message" rows="3" placeholder="Что произошло и какая помощь нужна?" maxlength="3000" required></textarea></label><label class="checkbox-label"><input name="consent" type="checkbox" required><span>Я понимаю, что это демоверсия и обращение будет подготовлено только на моём устройстве.</span></label><button class="primary-button form-submit" type="submit">Подготовить обращение <span aria-hidden="true">↗</span></button></form></div><div id="success-panel" hidden><span class="section-label">ОБРАЩЕНИЕ ПОДГОТОВЛЕНО</span><h2>Первый шаг<br><em>сделан.</em></h2><p>Сохраните текст обращения на своё устройство. Это демоверсия: бюро не получило заявку.</p><pre id="request-summary"></pre><button class="primary-button" id="download-request">Скачать обращение <span aria-hidden="true">↓</span></button><button class="text-button" id="edit-request">Изменить данные</button></div></dialog>
+<dialog id="privacy-dialog" aria-labelledby="privacy-title"><button class="dialog-close" aria-label="Закрыть">×</button><span class="section-label">ВАШИ ДАННЫЕ</span><h2 id="privacy-title">Конфиденциальность</h2><p>Это демонстрационный сайт вымышленного адвокатского бюро. Данные формы обрабатываются в вашем браузере для создания текстового файла. Они не отправляются на сервер и не сохраняются сайтом после перезагрузки.</p><p>Сайт запоминает только выбранное освещение первого экрана в локальном хранилище браузера. Шрифты загружаются с Google Fonts.</p></dialog>
+<script src="app.js"></script>
+</body>
+</html>
